@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Desafio de análise técnica
 
-## Getting Started
+Esse desafio consiste em duas etapas:
 
-First, run the development server:
+- Validar se o código do componente Breadcrumb cumpre com o que está documento no Figma. [Documentação aqui](https://www.figma.com/file/EYcIWSzoPn0IHfs5oI6o32/Teste-Front-React-WeFit-2024?type=design&node-id=9802-914&mode=design&t=6UViYcE94a5uHvGE-0)
+- Especificar um endpoint, sugerindo payload da requisição e as possíveis respostas garantindo as regras documentadas no protótipo.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+O código do componente a ser analisado esta na pasta `technical-analytics` e o resultado dos dois desafios devem ser feitas em um arquivo markdown dentro da pasta `technical-analytics`.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+\*Obs: Não é necessário implementar o código com as sugestões que você apontar e deixamos um [exemplo](/technical-analytics/Exemplo-endpoint.md) de como documentar o endpoint.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Avaliação
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Pontos avaliados:
+  - Avaliar código existente e planejar evolução
+  - Visão sistêmica
 
-## Learn More
+# Desafio de Estruturação de Projeto React + TypeScript + styled-components
 
-To learn more about Next.js, take a look at the following resources:
+O desafio consiste na criação de um site de e-commerce simplificado do zero, onde o candidato terá que criar um fluxo com três módulos/telas.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+São elas:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Home**: Onde ele terá que fazer uma requisição na API, trazendo assim, a lista de filmes quem podem ser adicionados ao carrinho.
+- **Carrinho**: Onde ele poderá ver os itens que foram adicionados, somando o valor total com base em cada item adicionado, podendo remover um item do carrinho. Por padrão, se o carrinho tiver nenhum item adicionado, deverá aparecer a tela de **empty** com a opção de voltar para tela inicial.
+- **Compra realizada**: Após confirmar o pedido na tela anterior, o usuário deverá ser encaminhado para a tela de pedido confirmado. Aqui o usuário também terá a opção de voltar para tela inicial.
 
-## Deploy on Vercel
+[Protótipo do Figma](https://www.figma.com/file/EYcIWSzoPn0IHfs5oI6o32/Teste-Front-React-WeFit-2024?type=design&t=ObXSBfm5ZUrCaisz-6)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+\*Obs: os assets podem ser exportados do próprio Figma.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Sobre a API**
+
+Para o desafio, simularemos uma API, onde o candidato terá que realizar um **GET** para [**https://wefit-movies.vercel.app/api/movies**](https://wefit-movies.vercel.app/api/movies) onde terá a lista de filmes.
+
+## Avaliação
+
+- Pontos avaliados:
+  - Fidelidade do layout do Figma;
+  - Funcionamento da aplicação (ausência de bugs);
+  - Qualidade do código:
+    - Organização das pastas;
+    - Domínio do TypeScript;
+    - Domínio do styled-components;
+    - Bom nível de Componentização;
+    - Aplicação de tecnologias;
+      - Ex: aplicar uma biblioteca específica que acelere o desenvolvimento.
+    - Aplicação das melhores práticas para isolar comportamento de UI da lógica de Integração;
+    - Código legível e de fácil manutenção;
+      - Ex: variáveis com nomes claros.
+    - Código limpo
+      - Ex: evitar `console.log` ou códigos desnecessários.
+
+Como você pode perceber, são dois desafios, sendo o primeiro de Análise e o segundo para a estruturação de um projeto React.
+Solicito a gentileza, exclusivamente para o teste React deixe o seu código na pasta `wemovie-ecommerce` e que hospede a aplicação em uma URL pública, por exemplo na Vercel ou Netlify, envie os links em até 24 horas a contar do envio teste caso você precise de mais tempo, por favor, nos informe. Nesse momento é muito importante para nós que você consiga entregar o desafio completo :)
