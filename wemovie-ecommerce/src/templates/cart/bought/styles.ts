@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
   place-items: center;
   gap: 2.4rem;
   height: 100%;
+  min-height: 80svh;
 `;
 
 export const Title = styled.h2`

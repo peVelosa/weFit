@@ -13,6 +13,7 @@ export const Wrapper = styled.div`
   gap: 2.4rem;
   background-color: ${({ theme }) => theme.white};
   color: ${({ theme }) => theme.spanishGray};
+  min-height: 80svh;
 `;
 
 export const Image = styled(NextImage)`
