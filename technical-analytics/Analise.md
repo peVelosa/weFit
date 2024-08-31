@@ -39,8 +39,7 @@ type RequestDTO = {
 
 Retorna um objeto JSON com os detalhes do requisição.
 
-Exemplo de resposta:
-
+**Resposta**:
 ```json
 {
   "status": "success",
@@ -77,9 +76,10 @@ Exemplo de resposta:
 - **message**: Mensagem geral sobre o erro.
 - **details**: Informação adicional, incluindo detalhes específicos que podem ajudar na identificação do problema.
 
-- **400 Bad Request**: Se o `email` fornecido já estiver cadastrado.
+### **400 Bad Request**: 
+**Decrição**: Se o `email` fornecido já estiver cadastrado.
 
-Retorno:
+**Resposta**:
 ```json
 {
   "status": "error",
