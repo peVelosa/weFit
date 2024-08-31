@@ -29,7 +29,9 @@ export default function RootLayout({
               <CartProvider>
                 <GlobalStyles />
                 <Navbar />
-                <Wrapper>{children}</Wrapper>
+                <main>
+                  <Wrapper>{children}</Wrapper>
+                </main>
               </CartProvider>
             </MovieProvider>
           </ThemeProvider>
