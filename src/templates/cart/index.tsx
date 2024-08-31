@@ -3,13 +3,12 @@
 import * as S from "./styles";
 import C from "./constants";
 import { useCart } from "@/contexts/cart";
-import { formatPrice } from "@/helpers";
+import { formatPrice, useWindowSize } from "@/helpers";
 import { Divider } from "@/styles/components/divider";
 import { Item as DesktopItem } from "./item/desktop";
 import { Item as MobileItem } from "./item/mobile";
 import { Bought } from "./bought";
-import { Empty } from "../../components/atoms/empty";
-import { useWindowSize } from "@/helpers";
+import { Empty } from "@/components/atoms/empty";
 import { useEffect, useState } from "react";
 
 export const CartTemplate = () => {
